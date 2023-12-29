@@ -10,7 +10,6 @@ export interface EnvVariables {
   DOMAIN: string;
   mongoConnection: string;
   DEFAULT_PAGINATION_NUMBER: string;
-  STATIC_DIR: string;
   STRIPE_PUBLISHABLE_KEY: string;
   STRIPE_SECRET_KEY: string;
 }
@@ -22,7 +21,6 @@ const env: EnvVariables = {
   WEBSITE_URL: process.env.WEBSITE_URL as string,
   mongoConnection: process.env.MONGO_CONNECTION as string,
   DEFAULT_PAGINATION_NUMBER: process.env.DEFAULT_PAGINATION_NUMBER as string,
-  STATIC_DIR: process.env.STATIC_DIR as string,
   STRIPE_PUBLISHABLE_KEY: process.env.STRIPE_PUBLISHABLE_KEY as string,
   STRIPE_SECRET_KEY: process.env.STRIPE_SECRET_KEY as string,
 };
